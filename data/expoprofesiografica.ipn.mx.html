@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+
+<html class="h-100">
+<head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Expires" content="0" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="shortcut icon" href="img/favicon.ico" /><title>
+	Expo Profesiográfica 2025
+</title>
+
+    <script src="../Scripts/jquery-3.5.1.slim.min.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+
+    <!-- Owl Carousel -->
+    
+    <link href="css/owl.carousel.min.css" rel="stylesheet" /><link href="css/owl.theme.default.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+
+    <!-- BlockUI -->
+    
+
+    <script src="../Scripts/jquery.blockUI.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#LkbDescargar').click(function () {
+                $.blockUI({
+                    message: '<h1>Auto-Unblock!</h1>'
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Estilos adicionales si son necesarios */
+        #footer-carousel {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .owl-carousel .owl-stage-outer {
+            overflow: hidden;
+        }
+
+        .owl-carousel .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+
+        .owl-carousel .owl-item {
+            width: auto;
+            margin: 0 5px; /* Espacio entre las imágenes */
+        }
+
+        .owl-carousel .item img {
+            max-width: 45px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 4, // Número de elementos visibles por defecto
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                nav: false,
+                dots: false,
+                responsive: {
+                    // Define diferentes cantidades de elementos visibles según la resolución de la pantalla
+                    0: {
+                        items: 4 // Para pantallas pequeñas, muestra solo un item
+                    },
+                    576: {
+                        items: 6 // Para pantallas medianas (>=576px), muestra dos items
+                    },
+                    768: {
+                        items: 8 // Para pantallas grandes (>=768px), muestra tres items
+                    },
+                    992: {
+                        items: 10 // Para pantallas extra grandes (>=992px), muestra cuatro items
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- Bootstrap 4.5.3 -->
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+    <!-- Encabezado -->
+    <link href="css/Main.css" rel="stylesheet" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/1331066554.js" crossorigin="anonymous"></script>
+
+    <script>
+        function successAlrt(title, body) {
+            swal({
+                title: title,
+                text: body,
+                icon: "success",
+                timer: 2000,
+            })
+                .then((value) => {
+                    if (value == true) {
+                        window.location.href = ("Validacion.aspx");
+                    }
+                    else {
+                        if (value == null) {
+                            window.location.href = ("Validacion.aspx");
+                        }
+                    }
+                });
+        }
+        function successalertOc(title, body) {
+            swal({
+                title: title,
+                text: body,
+                icon: "success",
+                timer: 2000,
+            })
+                .then((value) => {
+                    if (value == true) {
+                        window.location.href = ("Revision.aspx");
+                    }
+                    else {
+                        if (value == null) {
+                            window.location.href = ("Revision.aspx");
+                        }
+                    }
+                });
+        }
+        function swSuccessD(title, texto) {
+            swal({
+                title: title,
+                text: texto,
+                icon: "success",
+                timer: 2500,
+            })
+                .then((value) => {
+                    if (value == true) {
+                        window.location.href = ("../Default.aspx");
+                    }
+                    else {
+                        if (value == null) {
+                            window.location.href = ("../Default.aspx");
+                        }
+                    }
+                });
+        }
+        function successalert(title, body) {
+            swal({
+                title: title,
+                text: body,
+                icon: "success",
+                timer: 2000,
+            })
+        }
+        function erroralert(title, body) {
+            swal({
+                title: title,
+                text: body,
+                icon: "error",
+                timer: 2000,
+            })
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script type="text/javascript">
+        function openModal() {
+            $('#myModal').modal('show');
+        }
+    </script>
+
+    
+</head>
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../img/bkg-08.jpg")'>
+    <form method="post" action="./" id="form1" style="margin-bottom: 2rem;">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="r083Uk4yxdwn+S0Nq4xsiapTtbObVKDjxXEBLdLY4mMwa3QCaPLr8zVBXJfilcuWk82qHXl5sUfr5z4CoPxnFigDs1hM6ez0efq88vrG9wk=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="8JSPVXoNukGOwUeNDmtkm8IS8JsluUFwbb1d/q15UU8lVVAE789cxFqz61BRrzPKPPpynv4T46eWE+AuAeU7tUgczZHrB749FZ5jNbdggawPw0wb+MPfbMobH0HkZ3q0" />
+        <header class="header">
+            <div style="background-color: white">
+                
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <div class="d-inline-block ipnLogo-enlace">
+                                <a href="https://www.gob.mx/sep">
+                                    <img src="../img/pleca-educacion.svg" alt="Pleca de Gobierno" class="plecaGob gob">
+                                </a>
+
+                                <div class="d-inline-block ipnLogo-enlace">
+                                    <a href="https://expoprofesiografica.ipn.mx/">
+                                        <img src="../img/logo_ipn_guinda.svg" alt="Logo IPN" class="plecaIPN">
+                                        <p class="d-inline-block tituloLogo">
+                                            Instituto Politécnico Nacional
+                                            <br>
+                                            <span class="sm">"La Técnica al Servicio de la Patria"</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <div id="PnlCint" class="col-md-12" style="background-color: #6c1d45; color: white;">
+	
+            <div class="row" style="margin-top: 0.95rem;">
+                <div class="col-sm-12">
+                    <div class="d-flex flex-row-reverse bd-highlight">
+                        <a id="LkbLogin" class="mr-5" href="javascript:__doPostBack(&#39;ctl00$LkbLogin&#39;,&#39;&#39;)" style="color: white"><i class="fa-solid fa-circle-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+</div>
+        <!-- Begin page content -->
+        <main role="main" class="flex-shrink-0">
+
+            
+            
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="padding-left: 7rem;">
+            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>
+    </nav>
+    <div id="ContentPlaceHolder1_PnlMain">
+	
+        <div class="container mt-1">
+            <div class="col-md-12 text-center">
+                <img src="img/mail/LogoExpo.png" style="max-width: 320px;" />
+            </div>
+            <div class="row">
+                
+                <div id="ContentPlaceHolder1_PnlDES">
+		
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/Def/LogoDES.png" class="card-img my-2" alt="Dirección de Educación Superior">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Nivel Superior</h5>
+                                <div class="card-text">
+                                    <p>Del 13 de febrero al 23 de febrero.</p>
+                                    <p><b>Para aspirantes y expositores.</b></p>
+                                </div>
+                                <a href="NS/Registro.aspx" class="btn btn-primary">Regístrate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+	</div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/Def/LogoIPN.png" class="card-img my-2" alt="Invitados">
+                            
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Expositores Invitados</h5>
+                                <p class="card-text"><b>Para expositores de unidades administrativas y escuelas incorporadas.</b></p>
+                                <a href="Admin/RegistroInvitados.aspx" class="btn btn-primary">Regístrate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    
+
+        </main>
+    </form>
+
+    <footer class="mt-auto" style="background-color: #6c1d45; color: white;">
+        <div style="background-color: lightgray">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="../img/logos/DES/CICS-UMA.png" alt="CICS-UMA">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/CICS-UST.png" alt="CICS-UST">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ENBA.png" alt="ENBA">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESCA.png" alt="ESCA">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESCOM.png" alt="ESCOM">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESE.png" alt="ESE">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESEO.png" alt="ESEO">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESFM.png" alt="ESFM">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESIA.png" alt="ESIA">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESIME.png" alt="ESIME">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESIQIE.png" alt="ESIQIE">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESIT.png" alt="ESIT">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/ESM.png" alt="ESM">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/EST.png" alt="EST">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIBI.png" alt="UPIBI">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIEM.png" alt="UPIEM">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIICSA.png" alt="UPIICSA">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIIG.png" alt="UPIIG">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIIH.png" alt="UPIIH">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIIP.png" alt="UPIIP">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIITA.png" alt="UPIITA">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DES/UPIIZ.png" alt="UPIIZ">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-1.png" alt="CECYT1">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-2.png" alt="CECYT2">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-3.png" alt="CECYT3">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-4.png" alt="CECYT4">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-5.png" alt="CECYT5">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-6.png" alt="CECYT6">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-7.png" alt="CECYT7">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-8.png" alt="CECYT8">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-9.png" alt="CECYT9">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-10.png" alt="CECYT10">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-11.png" alt="CECYT11">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-12.png" alt="CECYT12">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-13.png" alt="CECYT13">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-14.png" alt="CECYT14">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-15.png" alt="CECYT15">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-16.png" alt="CECYT16">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-17.png" alt="CECYT17">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-18.png" alt="CECYT18">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CECYT-19.png" alt="CECYT19">
+                    </div>
+                    <div class="item">
+                        <img src="../img/logos/DEMS/CET.png" alt="CET1">
+                    </div>
+                    <!-- Repite esto para más imágenes -->
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <p>&copy; 2025 - Secretaría Académica - IPN</p>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRXBW0BXRN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HRXBW0BXRN');
+    </script>
+
+
+    <meta property="og:site_name" content="Instituo Politécnico Nacional" />
+    <meta property="og:url" content="https://www.ipn.mx/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Institución Educativa">
+    <meta property="og:description" content="IPN, Instituto con servicios académicos de Nivel Medio Superior, Nivel Superior y Posgrado e investigación, establece fomento a la cultura, deportes, ciencia">
+    <meta property="og:image" itemprop="image"  content="https://www.ipn.mx/assets/files/main/img/template/header/logo-ipn-horizontal.png">
+    <meta property="og:image:type" content="image/jpg" />
+    
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Institución Educativa - IPN</title>
+    <base href="https://ipn.mx/" />
+    <meta charset="UTF-8"/>
+    <meta name="description" content="IPN, Instituto con servicios académicos de Nivel Medio Superior, Nivel Superior y Posgrado e investigación, establece fomento a la cultura, deportes, ciencia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--  
+    <link rel="shortcut icon" href="/assets/files/main/img/template/favicon.ico">
+    -->
+    <link rel="shortcut icon" href="https://www.ipn.mx/assets/files/main/img/template/favicon.ico">
+
+    
+    <!-- Estilos bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"  rel="stylesheet">
+    
+    <!-- Estilos template -->
+    <link rel="stylesheet" type="text/css" href="https://test.desarrolloweb.ipn.mx/assets/files/principal/css/style-template.css">
+        
+    <!-- Referencia Owl carrusel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+    <!-- Galería -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+    <!-- Estilos componentes -->
+    <link rel="stylesheet" type="text/css" href="https://test.desarrolloweb.ipn.mx/assets/files/principal/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container encabezado-ipn">
+
+        <div class="utilerias-header text-right">
+            <ul class="list-inline text-end utilerias-list">
+                <li class="list-inline-item">
+                    <a href="/directorio-telefonico.html">DIRECTORIO</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="/correo-electronico.html">CORREO</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="/calendario-academico.html">CALENDARIO</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="/transparencia/">TRANSPARENCIA</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.ipn.mx/proteccion-datos-personales/">PROTECCIÓN DE DATOS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="https://www.gob.mx/sep" class="d-inline enlace-educacion">
+                            <img src="/assets/files/main/img/template/header/pleca-educacion.svg" class="logo-educacion">
+                        </a>
+                        <!-- <a href="https://ipn.mx/" class="d-inline-block"> -->
+                        <a href="https://ipn.mx/">
+                            <img src="/assets/files/main/img/template/header/logo-ipn-horizontal.svg" class="logo-ipn" alt="Logo IPN">
+                            <!-- Logo anterior
+                            <img src="/assets/files/main/img/template/header/logo-ipn-guinda.svg" class="logo-ipn" alt="Logo IPN">
+                            <p class="d-inline-block logo-ipn-enlace">
+                                Instituto Politécnico Nacional <br>
+                                <span class="sm">"La Técnica al Servicio de la Patria"</span>
+                            </p>
+                            -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accesibilidad-header text-right">
+            <ul class="list-inline text-end">
+                <li class="list-inline-item">
+                    <a href="https://www.ipn.mx/english/" hreflang="“en-us”" class="mr-3">
+                        <img src="/assets/files/main/img/template/header/icono-idioma-esp.png" width="45" alt="Idioma Espanol">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <i class="fab fa-accessible-icon"></i>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad contraste" onclick="toogleContraste();">
+                        <i class="fas fa-adjust"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad aumentaLetra" href="#">A+</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad reduceLetra" href="#">A-</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad resetLetra">A </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="menu-principal sticky-top" id="menu-principal">
+  <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuPrincipal" aria-controls="navbarMenuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenuPrincipal">
+              
+                
+                <ul class="navbar-nav w-100 justify-content-center me-auto mb-2 mb-lg-0">
+                    <li>
+                      <div class="position-relative">
+                        <div class="position-absolute banderin d-none">
+                            <img src="/https://www.ipn.mx/assets/files/main/img/template/logo_ipn_guinda.svg" alt="" class="banderin-img">
+                        </div>
+                      </div>                        
+                    </li>
+                    <li class="px-xl-3 px-xxl-5 d-none"></li>
+                    <li class="px-xl-3 px-xxl-5 d-none"></li>
+                    <li>
+                        <!-- outerTpl -->
+<ul class="navbar-nav w-100 d-flex justify-content-center me-auto mb-2 mb-lg-0">
+    <!-- rowTpl -->
+<li class="nav-item first active ">
+    <a class="nav-link" href="https://ipn.mx/" title="Institución Educativa" >Inicio</a>
+    
+</li>
+<!-- rowTpl -->
+<li class="nav-item dropdown  ">
+    <a class="nav-link dropdown-toggle" href="#" title="Comunidad Politécnica"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Comunidad</a>
+    <!-- innerTpl -->
+<ul class="dropdown-menu">
+    <!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item first" href="comunidad/estudiantes/" title="Estudiantes Instituto Politécnico Nacional" >Estudiantes</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/egresados/" title="Egresados Politécnicos" target="_blank">Egresados</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/personal-politecnico/" title="Personal de Mando PAAE Docente Politécnico" >Personal Politécnico</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/organizacion.html" title="Organización  y  Estructura  del  Instituto" >Organización y Estructura</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/intercambio-de-estudiantes.html" title="Intercambio de Estudiantes" target="_blank">Intercambio de Estudiantes</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/cgc.html" title="Consejo General Consultivo" target="_blank">Consejo General Consultivo</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/perspectiva-de-género.html" title="Perspectiva de Género" target="_blank">Perspectiva de Género</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/imagen-institucional.html" title="Identidad  Institucional" target="_blank">Imagen Institucional</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/normatividad.html" title="Normatividad" target="_blank">Normatividad</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/comite-etica.html" title="Comité de Ética" target="_blank">Comité de Ética</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="comunidad/defensoria.html" title="Defensoría de los Derechos Politécnicos" target="_blank">Defensoría de los Derechos Politécnicos</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item last" href="comunidad/ubicacion.html" title="Ubicación de las dependencias del Instituto" >Ubicación de las dependencias del Instituto</a>
+    
+</li>
+
+</ul>
+</li>
+<!-- rowTpl -->
+<li class="nav-item dropdown  ">
+    <a class="nav-link dropdown-toggle" href="#" title="Programas Educativos Escolarizado, No Escolarizado"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Oferta Educativa</a>
+    <!-- innerTpl -->
+<ul class="dropdown-menu">
+    <!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item first" href="oferta-educativa/admision.html" title="Admisión" target="_blank">Admisión</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="oferta-educativa/orientacion-juvenil.html" title="Orientación Juvenil" target="_blank">Orientación Juvenil</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="oferta-educativa/educacion-medio-superior/" title="Nivel Medio Superior | Estudia en el Politécnico" >Educación Media Superior</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="oferta-educativa/educacion-superior/" title="Nivel Superior | Estudia en el Politécnico - IPN" >Educación Superior</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="oferta-educativa/posgrado.html" title="Posgrados y Especialidades | Estudia en el Politécnico - IPN" >Posgrado</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="oferta-educativa/educacion-virtual.html" title="Educación Virtual" target="_blank">Educación Virtual</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item last" href="oferta-educativa/lenguas-extranjeras.html" title="Dirección y  Centros  de  Lenguas  Extranjeras" target="_blank">Lenguas Extranjeras</a>
+    
+</li>
+
+</ul>
+</li>
+<!-- rowTpl -->
+<li class="nav-item dropdown  ">
+    <a class="nav-link dropdown-toggle" href="#" title="Investigación y Posgrado"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Investigación y Posgrado</a>
+    <!-- innerTpl -->
+<ul class="dropdown-menu">
+    <!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item first" href="investigacion-y-posgrado/investigacion.html" title="Investigación" target="_blank">Investigación</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="investigacion-y-posgrado/posgrado.html" title="Posgrado" target="_blank">Posgrado</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item last" href="investigacion-y-posgrado/redes-de-investigación.html" title="Redes de Investigación" target="_blank">Redes de Investigación</a>
+    
+</li>
+
+</ul>
+</li>
+<!-- rowTpl -->
+<li class="nav-item dropdown last ">
+    <a class="nav-link dropdown-toggle" href="#" title="Vinculación"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Vinculación</a>
+    <!-- innerTpl -->
+<ul class="dropdown-menu">
+    <!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item first" href="vinculación/tecnopoli.html" title="Tecnópoli" target="_blank">Tecnópoli</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="vinculación/incubadora-de-empresas.html" title="Incubadora de Empresas" target="_blank">Incubadora de Empresas</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="vinculación/desarrollo-empresarial.html" title="Dirección de Servicios Empresariales y Transferencia Tecnológica" target="_blank">Desarrollo Empresarial </a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item last" href="vinculación/vinculacion-y-desarrollo-regional.html" title="Vinculación y Desarrollo Regional" target="_blank">Vinculación y Desarrollo Regional</a>
+    
+</li>
+
+</ul>
+</li>
+
+</ul>
+                    </li>
+                </ul>
+            
+              <ul class="utilerias-box navbar-nav" role="search">
+                  <li class="utilerias-separador"></li>
+                  <!--
+                  <li class="nav-item ">
+                      <a class="nav-link offcanvas-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuPrincipal" aria-controls="offcanvasMenuPrincipal">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                              <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z"/>
+                          </svg>
+                      </a>
+                  </li>
+                  -->
+                  <li class="nav-item">
+                      <button type="button" class="nav-link utilerias-busqueda" data-bs-toggle="modal" data-bs-target="#modalBusqueda">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                           </svg>
+                      </button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</div>
+
+<div id="tituloUnidad" class="titulo_unidad">
+    <div class="container p-0">
+        <h1 class="titulo_unidad_text text-center">Instituto Politécnico Nacional</h1>
+    </div>
+</div>
+
+
+<div class="container-fluid g-0 baner-principal text-white">   <div class="mascara-oscura"></div>   <div class="row d-flex align-items-center">       <div class="col-12 col-xl-4 text-center">
+                        <p class="baner-txt"><span>Calidad educativa,</span> fomentando el desarrollo integral de nuestros estudiantes</p>
+                        <p class="baner-txt-encabezado">Bienvenidos</p>
+                    </div>
+                    <div class="col-12 col-xl-8 baner-carrusel">
+                        <div id="carruselPrincipal" class="carousel slide carusel-contenedor">
+                            <div class="carousel-inner"><div class="carousel-item active"><a href="https://www.admision.ipn.mx/"target="_blank"><img src="/assets/files/imageninstitucional/img/identidad/2025/02/admision26-1.jpeg" class="d-block w-100"></a><div class="carusel-contenedor-txt">
+                    <a href="https://www.admision.ipn.mx/"target="_blank"><h3 class="carusel-titulo">Convocatorias de Admisión: Ciclo Escolar 2025-2026</h3></a>
+                 </div></div><div class="carousel-item"><a href="https://magazine.qs.com/qs-insights-magazine-25/ipns-journey-toward-global-excellence"target="_blank"><img src="/assets/files/imageninstitucional/img/identidad/2025/01/entrevista-es.jpg" class="d-block w-100"></a><div class="carusel-contenedor-txt">
+                    <a href="https://magazine.qs.com/qs-insights-magazine-25/ipns-journey-toward-global-excellence"target="_blank"><h3 class="carusel-titulo">Entrevista de QS Insights Magazine</h3></a>
+                 </div></div><div class="carousel-item"><a href="/assets/files/imageninstitucional/docs/identidad/2025/01/politecnico-aniversario.pdf"target="_blank"><img src="/assets/files/imageninstitucional/img/identidad/2025/01/aniversario-1000x800.jpg" class="d-block w-100"></a><div class="carusel-contenedor-txt">
+                    <a href="/assets/files/imageninstitucional/docs/identidad/2025/01/politecnico-aniversario.pdf"target="_blank"><h3 class="carusel-titulo">Politécnico, 89 años como máximo exponente de la educación tecnológica en México</h3></a>
+                 </div></div></div><button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+             </button></div></div></div></div>
+
+<div class="bkg_Default  ">
+    <div class="container    "><div class="row row-cols-sm-2 row-cols-md-5   ">
+        <div class="col-12 col-sm-6 pb-sm-3 ">
+            <div class="text-center">
+    <p class="numeralia-digito ">
+    <span class="number-counter" data-count-from="0" data-count-to="83" data-count-speed="30"></span>
+    </p>
+    <p class="numeralia-texto">Carreras</p>
+</div>
+        </div>
+        <div class="col-12 col-sm-6 pb-sm-3 ">
+            <div class="text-center">
+    <p class="numeralia-digito ">
+    <span class="number-counter" data-count-from="0" data-count-to="157" data-count-speed="30"></span>
+    </p>
+    <p class="numeralia-texto">Posgrados</p>
+</div>
+        </div>
+        <div class="col-12 col-sm-6 pb-sm-3 ">
+            <div class="text-center">
+    <p class="numeralia-digito ">
+    <span class="number-counter" data-count-from="0" data-count-to="2254" data-count-speed="300"></span>
+    +</p>
+    <p class="numeralia-texto">Investigación</p>
+</div>
+        </div>
+        <div class="col-12 col-sm-6 pb-sm-3 ">
+            <div class="text-center">
+    <p class="numeralia-digito ">
+    <span class="number-counter" data-count-from="0" data-count-to="93" data-count-speed="30"></span>
+    +</p>
+    <p class="numeralia-texto">Academias</p>
+</div>
+        </div>
+        <div class="col-12 col-sm-6 pb-sm-3 ">
+             <div class="row py-3 ">
+        <div class="col-12 col-sm-3 col-md-2 ">
+            
+        </div>
+        <div class="col-12 col-sm-6 mt-4 mt-sm-0 col-md-8 ">
+            <div class="text-center">
+    <img src="/assets/files/main/img/template/inicio/icono-estadisticas-2.jpg" class="img-fluid w-100   " alt="estadisticas">
+</div>
+        </div>
+        <div class="col-12 col-sm-3 mt-4 mt-sm-0 col-md-2 ">
+            
+        </div>
+</div>
+
+<a href="https://www.ipn.mx/coplaneval/" target="_blank">
+<h6 class="text-center fw-normal titulo-con-enlace">Estadísticas +</h6>
+</a>
+        </div>
+    </div></div>
+</div>
+
+<div class="bkg_GrisOxford  ">
+    <div class="container    "><div class="p-4">
+</div>
+
+<h2 class="text-center fw-bold display-6">Actividad Politécnica</h2>
+
+<div class="row py-3  "  > 
+        <div class="col-12 col-sm-4 ">
+            <div class="actividad-box">
+    <a href="/imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=8&t=6">
+    <img src="/assets/files/imageninstitucional/img/comunicados/2025/02/1000116402.jpg" class="d-block w-100 rounded-circle">
+    </a>
+    <div class="actividad-txt-contenedor">
+        <h3><a href="/imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=8&t=6">Inicia IPN acciones por venta de Transferon apócrifo</a></h3>
+        <div class="row detalle">
+            <div class="col-8">
+                <p> 2, Feb 2025</p>
+            </div>
+            <div class="col-4 text-end">
+                <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=https://ipn.mx/%2Fimageninstitucional%2Fcomunicados%2Fver-comunicado.html%3Fy%3D2025%26n%3D8%26t%3D6&quote=Inicia IPN acciones por venta de Transferon apócrifo" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>    
+                </a> -->
+                <a href="https://wa.me/?text=Inicia IPN acciones por venta de Transferon apócrifo%20https://ipn.mx//imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=8&t=6" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>    
+                </a>
+                <a href="https://twitter.com/intent/tweet?text=Inicia IPN acciones por venta de Transferon apócrifo&url=https://ipn.mx//imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=8&t=6" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>    
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="col-12 col-sm-4 mt-4 mt-sm-0 ">
+            <div class="actividad-box">
+    <a href="/imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=7&t=6">
+    <img src="/assets/files/imageninstitucional/img/comunicados/2025/01/1000114668.jpg" class="d-block w-100 rounded-circle">
+    </a>
+    <div class="actividad-txt-contenedor">
+        <h3><a href="/imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=7&t=6">Previene especialista del IPN por consumo de alimentos con micotoxinas</a></h3>
+        <div class="row detalle">
+            <div class="col-8">
+                <p>28, Jan 2025</p>
+            </div>
+            <div class="col-4 text-end">
+                <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=https://ipn.mx/%2Fimageninstitucional%2Fcomunicados%2Fver-comunicado.html%3Fy%3D2025%26n%3D7%26t%3D6&quote=Previene especialista del IPN por consumo de alimentos con micotoxinas" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>    
+                </a> -->
+                <a href="https://wa.me/?text=Previene especialista del IPN por consumo de alimentos con micotoxinas%20https://ipn.mx//imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=7&t=6" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>    
+                </a>
+                <a href="https://twitter.com/intent/tweet?text=Previene especialista del IPN por consumo de alimentos con micotoxinas&url=https://ipn.mx//imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=7&t=6" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>    
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="col-12 col-sm-4 mt-4 mt-sm-0 ">
+            <div class="actividad-box">
+    <a href="/imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=6&t=6">
+    <img src="/assets/files/imageninstitucional/img/comunicados/2025/01/1000113994.jpg" class="d-block w-100 rounded-circle">
+    </a>
+    <div class="actividad-txt-contenedor">
+        <h3><a href="/imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=6&t=6">Ingeniería Fotónica, carrera del futuro para la creciente era tecnológica, disponible en el IPN</a></h3>
+        <div class="row detalle">
+            <div class="col-8">
+                <p>26, Jan 2025</p>
+            </div>
+            <div class="col-4 text-end">
+                <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=https://ipn.mx/%2Fimageninstitucional%2Fcomunicados%2Fver-comunicado.html%3Fy%3D2025%26n%3D6%26t%3D6&quote=Ingeniería Fotónica, carrera del futuro para la creciente era tecnológica, disponible en el IPN" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>    
+                </a> -->
+                <a href="https://wa.me/?text=Ingeniería Fotónica, carrera del futuro para la creciente era tecnológica, disponible en el IPN%20https://ipn.mx//imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=6&t=6" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>    
+                </a>
+                <a href="https://twitter.com/intent/tweet?text=Ingeniería Fotónica, carrera del futuro para la creciente era tecnológica, disponible en el IPN&url=https://ipn.mx//imageninstitucional/comunicados/ver-comunicado.html?y=2025&n=6&t=6" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>    
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+<div class="p-3">
+</div></div>
+</div>
+
+<div class="bkg_Default  ">
+    <div class="container    "><div class="p-3">
+</div>
+
+<div class="row ">
+    <div class="col-md-10 offset-sm-1 ">
+        <h2 class="text-center fw-bold display-6">El IPN fomenta la innovación, la cultura y la vinculación </h2>  
+    </div>
+</div>
+
+ <div class="row py-3  ">
+        <div class="col-12 col-sm-6  px-0">
+           <!-- gettarget: 2025,1,,,15 --><div class="row text-start g-0">
+    <div class="col-12 col-xl-6">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=1&t=15&u=10"><img src="/assets/files/main/vinculacion/img/2025/01/robot-autonomo.jpg" class="d-block w-100 heigth_100"></a>
+    </div>
+    
+    <div class="col-12 col-xl-6 bg-vinculacion-4 vinculacion-txt-box text-white">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=1&t=15&u=10"><h3 class="vinculacion-titulo">Presentan en Japón bioalgoritmo de robot</h3></a>
+        <p class="vinculacion-txt">Alumnos de la Escom participaron en Simposio Internacional sobre redes, computación, sistemas y software
+
+
+</p>
+    </div>
+</div>
+
+<!-- gettarget: 2025,2,,,15 --><div class="row text-start g-0">
+
+
+    <div class="col-12 col-xl-6 bg-vinculacion-3 vinculacion-txt-box text-white order-last order-xl-first">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=2&t=15&u=3"><h3 class="vinculacion-titulo">Conoce la Beca Cultural IPN</h3></a>
+        <p class="vinculacion-txt">Un apoyo dirigido a estudiantes que participan en talleres artístico-culturales.
+</p>
+    </div>
+    
+    <div class="col-12 col-xl-6">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=2&t=15&u=3"><img src="/assets/files/main/vinculacion/img/2025/01/talleres-artisticos.jpg" class="d-block w-100 heigth_100"></a>
+    </div>
+
+</div>
+        </div>
+        <div class="col-12 col-sm-6 mt-4 mt-sm-0  px-0">
+           <!-- gettarget: 2025,3,,,15 --><div class="row text-start g-0">
+    <div class="col-12 col-xl-6">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=3&t=15&u=2"><img src="/assets/files/main/vinculacion/img/2025/01/nota-dad.jpg" class="d-block w-100 heigth_100"></a>
+    </div>
+    
+    <div class="col-12 col-xl-6 bg-vinculacion-3 vinculacion-txt-box text-white">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=3&t=15&u=2"><h3 class="vinculacion-titulo">¡Friendship Bowl Youth anotó touchdown!</h3></a>
+        <p class="vinculacion-txt">La clínica, a la que acudieron personalidades de la NFL, impulsa el talento juvenil en el fútbol americano</p>
+    </div>
+</div>
+
+<!-- gettarget: 2025,3,,,15 --><div class="row text-start g-0">
+
+
+    <div class="col-12 col-xl-6 bg-vinculacion-4 vinculacion-txt-box text-white order-last order-xl-first">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=3&t=15&u=11"><h3 class="vinculacion-titulo">Chicas Superpolitécnicas difunden ciencia</h3></a>
+        <p class="vinculacion-txt">
+ 
+Suzette Cota, Aislinn Aguirre, Blanca Estela García y Jessica Lakshmi son estas peculiares divulgadoras
+ 
+</p>
+    </div>
+    
+    <div class="col-12 col-xl-6">
+        <a href="https://ipn.mx/imageninstitucional/vinculacion/ver-comunicado.html?y=2025&n=3&t=15&u=11"><img src="/assets/files/main/vinculacion/img/2025/01/politecnicas.jpg" class="d-block w-100 heigth_100"></a>
+    </div>
+
+</div>
+        </div>
+    </div></div>
+</div>
+
+<div class="p-3">
+</div>
+
+<div class="container-fluid bandaRadio py-4">
+    <div class="container p-0">
+        <div class="d-flex justify-content-start">
+            <div class="bkg_band_img"> 
+                <a href="https://www.ipn.mx/radio/" class="icono">
+                    <img src="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/template/inicio/multimedia/logo-radioipn.png" alt="" class="img-fluid band_img">
+                    <img src="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/template/inicio/multimedia/logo-radioipn-over.png" alt="" class="img-fluid band_img icono-hover u-oculto">
+                 </a>
+            </div>
+            <div class="p-3">
+            </div>
+            <div class="bkg_band_img">
+                <a href="https://canalonce.mx/" class="icono">
+                    <img src="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/template/inicio/multimedia/logo-canalonce.png" alt="" class="img-fluid band_img">
+                    <img src="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/template/inicio/multimedia/logo-canalonce-over.png" alt="" class="img-fluid band_img icono-hover u-oculto">
+                 </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-3">
+</div>
+
+<div class="bkg_GrisClaro  ">
+    <div class="container    "><div class="p-4">
+</div>
+
+<ul class="nav nav-tabs principal-tabs-nav" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" 
+                                            data-bs-target="#tabpane_Publicaciones" type="button" role="tab" 
+                                            aria-controls="" aria-selected="">Publicaciones
+                                        </button></li><li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" 
+                                            data-bs-target="#tabpane_Investigación" type="button" role="tab" 
+                                            aria-controls="" aria-selected="">Investigación
+                                        </button></li><li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" 
+                                            data-bs-target="#tabpane_Servicios" type="button" role="tab" 
+                                            aria-controls="" aria-selected="">Servicios
+                                        </button></li><li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" 
+                                            data-bs-target="#tabpane_Difusión" type="button" role="tab" 
+                                            aria-controls="" aria-selected="">Difusión
+                                        </button></li><li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" 
+                                            data-bs-target="#tabpane_Institucional" type="button" role="tab" 
+                                            aria-controls="" aria-selected="">Institucional
+                                        </button></li></ul><div class="tab-content" id="myTabContent">
+    <div class="tab-pane principal-tabs-pane fade show active" id="tabpane_Publicaciones">
+    <div class="row" id="">
+    <div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.ipn.mx/ddicyt/conversus/revista.html"><img src="/assets/files/main/agenda/img/2025/01/conversus-diciembre.jpg" alt="Conversus: Neurodivergencia" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.ipn.mx/ddicyt/conversus/revista.html">31, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.ipn.mx/innovacion/"><img src="/assets/files/main/agenda/img/2024/11/innovacion.jpg" alt="Revista Innovación" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.ipn.mx/innovacion/">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.ipn.mx/gacetas/gaceta-politecnica.html"><img src="/assets/files/main/agenda/img/2025/01/minii-1838.jpg" alt="Gaceta 1838" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.ipn.mx/gacetas/gaceta-politecnica.html">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://ipn.mx/gacetas/seleccion-gaceta.html"><img src="/assets/files/main/agenda/img/2025/01/seleccion-2024.jpg" alt="Selección 2024" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://ipn.mx/gacetas/seleccion-gaceta.html">23, Jan 2025</a>
+        </div>
+    </div>
+</div>
+</div>
+</div><div class="tab-pane principal-tabs-pane fade show" id="tabpane_Investigación">
+    <div class="row" id="">
+    <div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://ipn.mx/investigacion/ciencia-abierta/recursos-digitales.html#Calendario"><img src="/assets/files/main/agenda/img/2024/12/recursos-informacion.jpg" alt="Recursos de Información Científica y Tecnológica" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://ipn.mx/investigacion/ciencia-abierta/recursos-digitales.html#Calendario">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://ipn.mx/investigacion/"><img src="/assets/files/main/agenda/img/2024/12/apoyo-economico.jpg" alt="Apoyos Económicos para publicaciones y trámite de Invenciones" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://ipn.mx/investigacion/">30, Jan 2025</a>
+        </div>
+    </div>
+</div>
+</div>
+</div><div class="tab-pane principal-tabs-pane fade show" id="tabpane_Servicios">
+    <div class="row" id="">
+    <div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.ipn.mx/genero/"><img src="/assets/files/main/agenda/img/2024/10/linea-2B.jpg" alt="Línea Guinda" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.ipn.mx/genero/">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.enmh.ipn.mx/servicios/catalogo-de-servicios.html"><img src="/assets/files/main/agenda/img/2025/01/imagen-2.jpg" alt="Asesoría Psicopedagógica ENMH" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.enmh.ipn.mx/servicios/catalogo-de-servicios.html">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.cics-sto.ipn.mx/servicios/cursos.html"><img src="/assets/files/main/agenda/img/2025/01/imagen-1.jpg" alt="Centros de atención CICS STO" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.cics-sto.ipn.mx/servicios/cursos.html">29, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.encb.ipn.mx/udimeb/"><img src="/assets/files/main/agenda/img/2024/11/factor2.jpg" alt="Factor de transferencia" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.encb.ipn.mx/udimeb/">22, Jan 2025</a>
+        </div>
+    </div>
+</div>
+</div>
+</div><div class="tab-pane principal-tabs-pane fade show" id="tabpane_Difusión">
+    <div class="row" id="">
+    <div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.ipn.mx/des/"><img src="/assets/files/main/agenda/img/2025/01/expo-profe.jpg" alt="Expo Profesiográfica 2025" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.ipn.mx/des/">13, Feb 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.admision.ipn.mx/"><img src="/assets/files/main/agenda/img/2025/02/admin-eventos.jpg" alt="Convocatorias de Admisión Ciclo Escolar 2025-2026" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.admision.ipn.mx/"> 1, Feb 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://ipn.mx/cenac/acciones/academias.html"><img src="/assets/files/main/agenda/img/2025/01/ia-para-docentes.jpg" alt="IA para docentes" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://ipn.mx/cenac/acciones/academias.html">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://ipn.mx/cenac/acciones/academias.html"><img src="/assets/files/main/agenda/img/2025/01/ia-generativa.jpg" alt="IA Generativa" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://ipn.mx/cenac/acciones/academias.html">30, Jan 2025</a>
+        </div>
+    </div>
+</div>
+</div>
+</div><div class="tab-pane principal-tabs-pane fade show" id="tabpane_Institucional">
+    <div class="row" id="">
+    <div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://acortar.link/ZSYZFk"><img src="/assets/files/main/agenda/img/2025/01/1000115568.jpg" alt="Transmisión CGC SO 4ta XLIII" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://acortar.link/ZSYZFk">31, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.ipn.mx/defensoria/"><img src="/assets/files/main/agenda/img/2024/11/derechos.jpg" alt="Defensoría de los Derechos Politécnicos" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.ipn.mx/defensoria/">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href=""><img src="/assets/files/main/agenda/img/2024/11/app.jpeg" alt="APP IPN" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="">30, Jan 2025</a>
+        </div>
+    </div>
+</div><div class="col-lg-3 mb-5">
+    <div class="noticia-simple">
+        <a href="https://www.ipn.mx/normatividad/"><img src="/assets/files/main/agenda/img/2024/11/normatividad2.jpg" alt="Normatividad" class="img-fluid"></a>
+        <div class="noticia-simple-txt">
+            <a href="https://www.ipn.mx/normatividad/">29, Jan 2025</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-center">
+    <a href="https://www.ipn.mx/agenda-de-eventos.html" target="_blank" type="button" class="btn m-3   btn-outline-dark" name="btnEnlace">Consulta la Agenda Politécnica</a>
+</div>
+
+<div class="p-3">
+</div></div>
+</div>
+
+<div class="bkg_Default  ">
+    <div class="container    "><div class="row ">
+    <div class="col-md-10 offset-sm-1 ">
+        <div class="d-flex flex-wrap justify-content-center">
+    <div class="p-2 ">
+        <a href="https://www.facebook.com/ipn.mx" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/fb.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 ">
+        <a href="https://x.com/IPN_MX" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/x.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 ">
+        <a href="https://www.instagram.com/ipn_oficial/" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/ig.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 ">
+        <a href="https://www.youtube.com/user/IPNoficial" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/yt.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 d-none">
+        <a href="" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/tt.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 ">
+        <a href="https://ipn.mx/gacetas/" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/g.svg" />
+            </svg>
+        </a>
+    </div>
+</div>    
+
+  
+    </div>
+</div></div>
+</div>
+
+<div class="bkg_GrisOscuro p-3 ">
+    <div class="container    "><div class="row row-cols-7 py-3 ">
+      <div class="col "><a href="https://www.plataformadetransparencia.org.mx/" target="_blank">
+   <img src="/assets/files/main/img/template/inicio/icn-plataforma-over.webp" class="img-fluid w-100 " alt="Plataforma de transparencia"> 
+</a></div>
+      <div class="col "><a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/?idSujetoObigadoParametro=218&idEntidadParametro=33&idSectorParametro=21" target="_blank">
+   <img src="/assets/files/main/img/template/inicio/icn-obligaciones-over.webp" class="img-fluid w-100 " alt="Obligaciones de transparencia"> 
+</a></div>
+      <div class="col "><a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/?idSujetoObigadoParametro=10181&idEntidadParametro=33&idSectorParametro=25" target="_blank">
+   <img src="/assets/files/main/img/template/inicio/icn-fondo-over.webp" class="img-fluid w-100 " alt="Fondos de investigación"> 
+</a></div>
+      <div class="col "><a href="https://www.ipn.mx/assets/files/website/docs/inicio/cedac.pdf" target="_blank">
+   <img src="/assets/files/main/img/template/inicio/icn-lehasvisto-over.webp" class="img-fluid w-100 " alt="Le has visto?"> 
+</a></div>
+      <div class="col "><a href="https://www.ipn.mx/proteccion-datos-personales/" target="_blank">
+   <img src="/assets/files/main/img/template/inicio/icn-inai-over.webp" class="img-fluid w-100 " alt="Avisos de privacidad"> 
+</a></div>
+      <div class="col "><a href="https://www.infomex.org.mx/gobiernofederal/home.action" target="_blank">
+   <img src="/assets/files/main/img/template/inicio/icn-infomex-over.webp" class="img-fluid w-100 " alt="InfoMex"> 
+</a></div>
+      <div class="col "><a href="https://www.ipn.mx/proteccion-datos-personales/" target="_blank">
+   <img src="/assets/files/main/img/template/inicio/icn-avisos-over.webp" class="img-fluid w-100 " alt="Avisos de privacidad"> 
+</a></div>
+</div>   </div>
+</div>
+
+    <div class="footer-ipn">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-4 text-center">
+                    <img src="/assets/files/main/img/template/footer/pleca-educacion-footer.png" class="img-fluid logo-educacion-footer">
+                </div>
+                <div class="col-lg-8">
+                    <p>INSTITUTO POLITÉCNICO NACIONAL</p>
+                    <p>D.R. Instituto Politécnico Nacional (IPN). Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos, Zacatenco, Alcaldía Gustavo A. Madero, C.P. 07738, Ciudad de México. Conmutador: 55 57 29 60 00 / 55 57 29 63 00.</p>
+                    <p class="mb-0">Esta página es una obra intelectual protegida por la Ley Federal del Derecho de Autor, puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica; su uso para otros fines, requiere autorización previa y por escrito de la Dirección General del Instituto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de busqueda -->
+    <div class="modal fade" id="modalBusqueda" tabindex="-1" aria-labelledby="modalBusqueda" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="textoBusqueda" class="form-control" placeholder="¿Qué buscas?" aria-label="Busqueda" aria-describedby="boton-busqueda" onkeypress="if(event.keyCode == 13){enviarBusqueda();}" />
+                        <button class="btn btn-primary btn-busqueda" type="button" id="boton-busqueda" onclick="enviarBusqueda();">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Owl carrusel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+     <!-- Galería -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+    <!-- JS de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.js"></script>
+    
+    <!-- Framework gobernación -->
+    <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+    
+    <!-- Scripts template -->
+    <script src="https://www.test.desarrolloweb.ipn.mx/assets/files/principal/js/index.js"></script>
+    
+    <!-- Script para enviar al buscador gratuito -->
+    <script>
+        let isStyleChanged = false;
+        
+        function enviarBusqueda(){
+            var texto = document.getElementById("textoBusqueda").value;
+            // window.open("https://buscador.ipn.anteater.ai/search?q="+texto,'_blank');
+            var dominio = "ipn.mx"; // Reemplaza con el dominio que desees
+            var consulta = "site:" + dominio + " " + texto;
+            window.open("https://www.google.com/search?q=" + encodeURIComponent(consulta), '_blank');
+        }
+        
+        function toogleContraste(){
+            
+            isStyleChanged = !isStyleChanged;
+
+            if (isStyleChanged) {
+                const divs = document.querySelectorAll('div');
+                divs.forEach(div => {
+                    const elements = div.querySelectorAll('*');
+                    div.classList.add('text-danger', 'bg-dark');
+                    elements.forEach(el => {
+                        el.classList.add('text-danger');
+                    });
+                });
+            } else {
+                // Restaurar estilos originales
+                const divs = document.querySelectorAll('div');
+                divs.forEach(div => {
+                    const elements = div.querySelectorAll('*');
+                    div.classList.remove('text-danger', 'bg-dark');
+                    elements.forEach(el => {
+                        el.classList.remove('text-danger');
+                    });
+                });
+            }
+        }
+    </script>
+
+    </div>
+</body>
+
+</html>

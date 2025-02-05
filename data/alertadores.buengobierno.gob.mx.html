@@ -1,0 +1,1032 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Ciudadanos Alertadores Internos y Externos de la Corrupción</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="icon" href="assets/images/alertadores_favicon.ico">
+	<style>
+		#banner, #alertar {
+			transition: background 1s linear;
+		}
+	</style>
+</head>
+
+<body class="is-preload landing">
+	<div id="page-wrapper">
+		<!-- Header -->
+		<header id="header" class="transparent">
+
+			<div class="container">
+				<a id="logo" href="index.html"><img src="assets/images/logo_alertadores.svg"></a>
+				<nav id="nav">
+					<ul>
+						<li><a href="#que-es">¿Qué es?</a></li>
+						<li><a href="#objetivos">Objetivos</a></li>
+						<li><a href="#requisitos">Requisitos</a></li>
+						<li><a href="#como-funciona">¿Cómo funciona?</a></li>
+						<li><a href="#seguimiento">Seguimiento de la Alerta</a></li>
+						<li><a href="#normatividad">Normatividad</a></li>
+						<li><a href="#autoproteccion">Guia de Autoprotección</a></li>
+						<li><a href="#aviso">Aviso de Privacidad Simplificado</a></li>
+						<li><a href="#accesibilidad">Declaración de Accesibilidad</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="content" style="width: 100%; position: absolute; bottom: 0;">
+				<header>					
+					<button type="button" id="alertar" class="button mt-3" data-toggle="modal" data-target="#aviso-privacidad">
+						Enviar alerta
+					</button>					
+				</header>
+			</div>
+		</section>
+
+
+		<script>
+			var images = [							
+				'assets/images/slide1.png',
+				'assets/images/slide2.png',
+				'assets/images/slide3.png'
+			];
+			var colores = [				
+				'#691C32',
+				'#B49862',
+				'#691C32',
+			]
+			var i = 0;
+			function swap() {
+				if (i >= images.length) { i = 0; }
+				document.getElementById('banner').style.backgroundImage = `url(${images[i]})`;
+				document.getElementById('alertar').style.backgroundColor = colores[i];
+				i++;
+			}
+			swap();
+			setInterval(swap, 10000);
+		</script>
+		<!-- Qué es -->
+		<section id="que-es" class="wrapper style1 top">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>¿Qué es?</h2>
+					</header>
+					<div class="row">
+						<div class="col-4 col-12-medium text-center-small">
+							<img src="assets/images/que_es.svg" class="img-fluid">
+						</div>
+						<div class="col-8 col-12-medium">
+							<!--img src="assets/images/logo_sfp_color.svg" class="img-fluid"-->
+							<p>Es una plataforma que la Secretaría de la Función
+								Pública pone a tu disposición para alertar actos graves de
+								corrupción, en los que se encuentren involucradas
+								personas servidoras públicas federales.</p>
+							<p>Puedes alertar:</p>
+							<ul>
+								<li>Cohecho</li>
+								<li>Peculado</li>
+								<li>Desvío de recursos públicos.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Por qué confiar -->
+		<section id="dos" class="wrapper style3 top">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>¿Por qué confiar en nosotros?</h2>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<p>La Plataforma <b>garantiza</b> en todo momento el anonimato
+								de las alertas, la <b>confidencialidad</b> de las comunicaciones
+								y la identidad del alertador.
+							</p>
+							<p><b>¡Importante! Te sugerimos no enviar la alerta desde tu lugar
+									de trabajo para que no pueda ser rastreada.</b></p>
+							<p>Hay dos opciones para realizar la alerta de manera <b>anónima</b>:</p>
+							<ol>
+								<li>Básica: utilizando su navegador, pero sin facilitar los datos de
+									identificación y de contacto.</li>
+								<li>Avanzada: Garantizando plenamente el anonimato de la
+									comunicación en el entorno digital utilizando una red de
+									anonimización. La herramienta más utilizada es la red
+									TOR. La forma más sencilla de utilizar esta red es
+									descargar e instalar el navegador Tor Browser, que se
+									puede obtener desde la página: <a
+										href="https://www.torproject.org/download/download-easy.html.es">https://www.torproject.org/download/download-easy.html.es
+										.</a></li>
+							</ol>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Por qué se ha creado este medio -->
+		<section id="tres" class="wrapper style1 top">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>¿Por qué se ha creado este mecanismo de participación y colaboración?</h2>
+					</header>
+					<div class="row">
+						<div class="col-4 col-12-medium text-center">
+							<img src="assets/images/014-audit.svg">
+							<p>Para fortalecer la integridad de la Administración Pública Federal (APF).</p>
+						</div>
+						<div class="col-4 col-12-medium text-center">
+							<img src="assets/images/044-social.svg">
+							<p>Como mecanismo de participación ciudadana en el combate a la corrupción y la impunidad
+							</p>
+						</div>
+						<div class="col-4 col-12-medium text-center">
+							<img src="assets/images/127-hide.svg">
+							<p>Para garantizar el anonimato de las alertas y la identidad del alertador.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Objetivos -->
+		<section id="objetivos" class="wrapper style3">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2 class="font-weight-bold">Objetivos de la plataforma para Alertar</h2>
+					</header>
+					<div class="row">
+						<div class="col-6 col-12-medium">
+							<ul>
+								<li>Facilitar que la ciudadanía y personas servidoras públicas puedan comunicar alertas
+									sobre cohecho, peculado y desvío de recursos públicos. sin sufrir
+									represalias.</li>
+								<li>Garantizar la confidencialidad de las comunicaciones.</li>
+								<li>Proteger el anonimato cuando así lo decida la persona alertadora</li>
+								<li>Servir de herramienta en el combate a la corrupción e impunidad</li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-medium d-flex">
+							<img class="align-self-start" src="assets/images/undraw-people-search-wctu.svg">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 col-12-medium">
+							<h3 class="text-medium text-right text-left-small mr-4">Ámbito de actuación</h3>
+						</div>
+						<div class="col-6 col-12-medium">
+							<p>El alcance de esta herramienta
+								comprende a cualquier persona que conozca de un
+								hecho grave de corrupción (sobre cohecho, peculado, desvío de recursos públicos) en el
+								que estén
+								involucradas personas servidoras públicas federales.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Requisitos -->
+		<section id="requisitos" class="wrapper style1 top">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>¿Qué debe de contener una Alerta?</h2>
+					</header>
+					<div class="row">
+						<div class="col-3 col-12-medium text-center">
+							<img src="assets/images/002-pencil.svg">
+							<p>Describe los hechos para facilitar la identificación de los actos que se alertan (Señala
+								qué ocurrió, cómo, cuándo [fecha] y dónde).</p>
+						</div>
+						<div class="col-3 col-12-medium text-center">
+							<img src="assets/images/034-user.svg">
+							<p>Datos de identificación de la persona servidora pública que presuntamente se encuentra
+								involucrada.</p>
+						</div>
+						<div class="col-3 col-12-medium text-center">
+							<img src="assets/images/001-buildings.svg">
+							<p>Nombre de la dependencia o entidad en la que ocurrieron los actos.
+							</p>
+						</div>
+						<div class="col-3 col-12-medium text-center">
+							<img src="assets/images/026-video-marketing.svg">
+							<p>Proporciona elementos probatorios, es decir: Documentos, fotografías, escritos, notas
+								taquigráficas, audio y video
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ¿Cómo envías una Alerta? -->
+		<section id="como-funciona" class="wrapper style3">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>¿Cómo envías una alerta?</h2>
+					</header>
+					<div class="row">
+						<div class="col-3 col-12-medium text-center siguiente">
+							<img src="assets/images/group-4.svg">
+							<p>Detectas un acto de corrupción en alguna institución.</p>
+						</div>
+						<div class="col-3 col-12-medium text-center siguiente">
+							<img src="assets/images/023-website.svg">
+							<p>Entra a nuestra plataforma directamente o si lo prefieres descarga Tor.</p>
+						</div>
+						<div class="col-3 col-12-medium text-center siguiente">
+							<img src="assets/images/145-outbox.svg">
+							<p> Sube tu alerta y documentos.
+							</p>
+						</div>
+						<div class="col-3 col-12-medium text-center">
+							<img src="assets/images/077-credit-card.svg">
+							<p>Recibe tu código para dar seguimiento a tu alerta
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="panel  text-center bg-yellow">
+								<p>¡Importante! Te sugerimos no enviar la alerta desde tu lugar de trabajo para
+									que no pueda ser rastreada.</p>
+								<p>Para mayor seguridad te recomendamos utilizar el navegador Tor.</p>
+								<a rel="noopener noreferrer" href="https://www.torproject.org/download/" target="_blank"
+									class="button mt-3 text-smaller">Descargar Navegador Tor</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Seguimiento -->
+		<section id="seguimiento" class="wrapper style1">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>Seguimiento</h2>
+						<p>La persona Alertadora debe ser informada de las acciones realizadas con motivo de su alerta.
+						</p>
+
+					</header>
+					<div class="row">
+						<div class="col-6 col-12-medium mb-4">
+							<h3>Ámbito de actuación</h3>
+							<p>Utilizando la aplicación podrás hacer que se investigue el caso y se actúe para mejorar
+								la integridad del sector público. Asegúrate de conocer el ámbito de actuación y las
+								herramientas de anonimato.
+							</p>
+							<button type="button" class="button mt-3" data-toggle="modal" data-target="#aviso-privacidad">
+								Enviar alerta
+							</button>
+						</div>
+						<div class="col-6 col-12-medium">
+							<h3>Búsqueda por folio ciudadano</h3>
+							<p>Si quieres consultar en qué etapa del proceso se encuentra tu alerta o aportar más
+								información sobre una comunicación anterior, introduce el código que se te proporciono:
+							</p>
+							<a href="https://alertadorescontralacorrupcion.funcionpublica.gob.mx" class="button">Consultar Alerta</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Normatividad -->
+		<section id="normatividad" class="wrapper style3">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>Lineamientos para la Promoción y Operación
+							del Sistema de Ciudadanos Alertadores
+							Internos y Externos de la Corrupción
+						</h2>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<a rel="noopener noreferrer" href="https://dof.gob.mx/nota_detalle.php?codigo=5594816&fecha=11/06/2020"
+								class="button" target="_blank">Descárgalos aquí</a>
+							</a>
+							<a rel="noopener noreferrer"
+								href="https://storage.apps.funcionpublica.gob.mx/descarga/Lineamientos-Alertadores.odt" class="button"
+								target="_blank">Descarga la versión integrada</a>
+							</a>
+							<p class="pb-4 mb-0">&nbsp;</p>
+							<p class="pb-4 mb-0">&nbsp;</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<header>
+						<h2>Protocolo de Protección para Personas Alertadoras de la Corrupción</h2>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<a rel="noopener noreferrer" href="https://www.dof.gob.mx/nota_detalle.php?codigo=5603032&fecha=19/10/2020#gsc.tab=0"
+								class="button" target="_blank">Descárgalo aquí</a>
+							</a>														
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Autoproteccion -->
+		<section id="autoproteccion" class="wrapper style1">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>Elementos para la Autoprotección</h2>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<p><b>¡Tu seguridad es lo más importante!</b></p>
+							<a rel="noopener noreferrer" href="documentos/guia-autoproteccion-alertadores.pdf" class="button"
+								target="_blank">Descarga la guía aquí</a>
+							</a>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Aviso de privacidad Simplificado-->
+		<section id="aviso" class="wrapper style3">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>Aviso de Privacidad Simplificado</h2>
+					</header>
+					<div class="row">
+						<div class="col-12">							
+							<a rel="noopener noreferrer" href="documentos/aviso_privacidad_simplificado.pdf" class="button"
+								target="_blank">Descarga aquí</a>
+							</a>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Declaración de accesibilidad-->
+		<section id="accesibilidad" class="wrapper style3">
+			<div class="content">
+				<div class="container">
+					<header>
+						<h2>Declaración de accesibilidad</h2>
+					</header>
+					<div class="row">
+						<div class="col-12">							
+							<a rel="noopener noreferrer" href="https://www.gob.mx/accesibilidad" class="button"
+								target="_blank">Ver aquí</a>
+							</a>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<div class="col-9">
+							<a id="logo" href="index.html"><img src="assets/images/logo_cs_w_png.svg"></a>
+						</div>
+						<div class="col-3">
+							<!--ul class="icons">
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span
+											class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-twitter"><span
+											class="label">Twitter</span></a>
+								</li>
+							</ul-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
+	<!-- Modal aviso-privacidad-->
+	<div class="modal fade" id="aviso-privacidad" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog container modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<section class="wrapper style1 top">
+						<div class="content">
+							<div class="container">
+								<!-- step1-->
+								<div class="row step" id="step1">
+									<header class="col-12">
+										<h4>La persona presuntamente involucrada en los hechos a alertar, es servidora
+											pública de:</h4>
+									</header>
+
+									<div class="col-12" style="margin: 0 auto;">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="servpub" id="servpub1" value="1">
+											<label class="form-check-label" for="servpub1">
+												La Administracion Pública Federal
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="servpub" id="servpub2" value="2">
+											<label class="form-check-label" for="servpub2">
+												De algún estado de la República Mexicana
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="servpub" id="servpub3" value="3">
+											<label class="form-check-label" for="servpub3">
+												De algún Municipio o Alcaldía
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="servpub" id="servpub4" value="4">
+											<label class="form-check-label" for="servpub4">
+												De la Fiscalía General de la República
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="servpub" id="servpub5" value="5">
+											<label class="form-check-label" for="servpub5">
+												De la Fiscalía o Procuraduría General de su Estado
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="servpub" id="servpub6" value="6">
+											<label class="form-check-label" for="servpub6">
+												No interviene una persona servidora pública
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- stepf1-->
+								<div class="row step" id="stepf1">
+									<header class="col-12">
+										<h4>Los hechos que nos narra se encuentran relacionados con:</h4>
+									</header>
+
+									<div class="col-12" style="margin: 0 auto;">
+										<p>La persona servidora pública, a cambio de realizar el trámite o gestión
+											solicitada, le exige, acepta o pretende obtener algún dinero o ventaja
+											personal de tipo económica o material, para ella o para alguna otra persona
+											con la que tenga relación familiar, sentimental, laboral o de negocios.</p>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f1" id="f1a" value="1">
+											<label class="form-check-label" for="f1a">
+												Sí
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f1" id="f1b" value="2">
+											<label class="form-check-label" for="f1b">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- stepf2-->
+								<div class="row step" id="stepf2">
+									<header class="col-12">
+										<h4>Los hechos que nos narra se encuentran relacionados con:</h4>
+									</header>
+
+									<div class="col-12" style="margin: 0 auto;">
+										<p>La persona servidora pública esté recibiendo en su salario una cantidad en
+											exceso de lo que debería de recibir, y no lo devuelva.</p>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f2" id="f2a" value="1">
+											<label class="form-check-label" for="f2a">
+												Sí
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f2" id="f2b" value="2">
+											<label class="form-check-label" for="f2b">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- stepf3-->
+								<div class="row step" id="stepf3">
+									<header class="col-12">
+										<h4>Los hechos que nos narra se encuentran relacionados con:</h4>
+									</header>
+
+									<div class="col-12" style="margin: 0 auto;">
+										<p>La persona servidora pública autoriza, solicita o realiza actos para usar o
+											apropiarse para sí o para alguna otra persona con la que tenga relación
+											familiar, sentimental, laboral o de negocios, de los recursos públicos,
+											materiales, humanos o financieros que se encuentran a su cargo por motivo de
+											su empleo.</p>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f3" id="f3a" value="1">
+											<label class="form-check-label" for="f3a">
+												Sí
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f3" id="f3b" value="2">
+											<label class="form-check-label" for="f3b">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- stepf4-->
+								<div class="row step" id="stepf4">
+									<header class="col-12">
+										<h4>Los hechos que nos narra se encuentran relacionados con:</h4>
+									</header>
+
+									<div class="col-12" style="margin: 0 auto;">
+										<p>La persona servidora pública en ejercicio de sus funciones, disponga para su
+											seguridad personal del servicio de miembros de alguna corporación policiaca,
+											seguridad pública o de las fuerzas armadas, con la salvedad de que la propia
+											ley lo considere necesario para seguir desempeñando sus actividades.</p>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f4" id="f4a" value="1">
+											<label class="form-check-label" for="f4a">
+												Sí
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f4" id="f4b" value="2">
+											<label class="form-check-label" for="f4b">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- stepf5-->
+								<div class="row step" id="stepf5">
+									<header class="col-12">
+										<h4>Los hechos que nos narra se encuentran relacionados con:</h4>
+									</header>
+
+									<div class="col-12" style="margin: 0 auto;">
+										<p>La persona servidora pública autorice, solicite o lleve a cabo actos para
+											asignar o desviar recursos públicos, materiales, humanos o financieros ya
+											sea para si o para otros,</p>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f5" id="f5a" value="1">
+											<label class="form-check-label" for="f5a">
+												Sí
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f5" id="f5b" value="2">
+											<label class="form-check-label" for="f5b">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- stepf6-->
+								<div class="row step" id="stepf6">
+									<header class="col-12">
+										<h4>Los hechos que nos narra se encuentran relacionados con:</h4>
+									</header>
+
+									<div class="col-12" style="margin: 0 auto;">
+										<p>La persona servidora pública que otorgue o autorice para sí o para otros el
+											pago de una remuneración salarial indebida, pagos de jubilaciones, pensiones
+											o haberes de retiro, liquidaciones por servicios prestados, préstamos o
+											créditos que no estén previstos en ley, decreto legislativo, contrato
+											colectivo, contrato ley o condiciones generales de trabajo.</p>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f6" id="f6a" value="1">
+											<label class="form-check-label" for="f6a">
+												Sí
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="f6" id="f6b" value="2">
+											<label class="form-check-label" for="f6b">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- aviso-privacidad-->
+								<div class="row step" id="step3">
+
+									<header class="col-12">
+										<h4 class="text-center"><b>Aviso de privacidad simplificado</b></h4>
+									</header>
+									<div class="col-12">
+										<h5 class="text-center"><b>SISTEMA DE CIUDADANOS ALERTADORES INTERNOS Y EXTERNOS DE LA CORRUPCIÓN </b>
+										</h5>
+										<p>La Secretaría Anticorrupción y Buen Gobierno (SABG), a través de la Coordinación de Denuncias y Atención Ciudadana (CDAC),
+										adscrita a la Unidad Investigadora (UI), adscrita a la Coordinación General de Combate a la Impunidad,
+										con domicilio en Av. Insurgentes Sur 1735, Col. Guadalupe Inn. C.P. 01020, Alcaldía Álvaro Obregón,
+										Ciudad de México, es el área administrativa responsable del tratamiento de los datos personales recabados
+										en la Plataforma Tecnológica de Alerta, los cuales serán protegidos observando los principios de licitud,
+										finalidad, lealtad, consentimiento, calidad, proporcionalidad, información y responsabilidad previstos en la
+										Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados (publicada en el Diario Oficial 
+										de la Federación el 26 de enero de 2017), y en demás normativa aplicable.
+										</p>
+										<h5 class="grey"><b>Finalidad del tratamiento de los datos personales.</b>
+										</h5>
+										<p>Los datos personales contenidos en la información que la CDAC se allega con motivo de la presentación de las alertas ciudadanas,
+										los resguarda como información confidencial, toda vez que derivan de comunicaciones relacionadas con faltas administrativas 
+										presuntamente cometidas por personas servidoras públicas adscritas a la Administración Pública Federal.
+										</p>										
+										<p>Es de precisar que la Plataforma Tecnológica de Alerta, es un mecanismo seguro de comunicación que garantiza el anonimato
+										y la seguridad de su información; su identidad no es revelada sin su consentimiento explícito.
+										</p>
+										<p>
+										Los datos personales, pueden obtenerse con motivo de que las personas alertadoras aportan evidencias como lo son: documentos, 
+										fotografías, videos, audios, capturas de pantalla o imágenes y que si bien, la CDAC no tiene una finalidad de tratamiento 
+										para dichos datos; no menos cierto es que, los protege como información confidencial, inclusive ante la misma instancia 
+										investigadora, ello en razón de que uno de los pilares del Sistema de Ciudadanos Alertadores Internos y Externos de la Corrupción
+										es la protección de la identidad y el anonimato de la persona alertadora; lo anterior de conformidad con el Lineamiento SEGUNDO, 
+										fracción IV del Acuerdo por el que se reforma el diverso por el que se establecen los Lineamientos para la Promoción y Operación
+										del Sistema de Ciudadanos Alertadores Internos y Externos de la Corrupción.
+										</p>
+										<p>
+										La Plataforma Tecnológica de Alerta, es un mecanismo seguro de comunicación que garantiza el anonimato y la seguridad de su información;
+										su identidad no es revelada sin su consentimiento explícito.
+										</p>
+										<p>
+										Ahora bien, cuando la persona alertadora solicita medidas de protección derivado de tener represalias en su contra por la presentación
+										de la alerta ciudadana; la CDAC solicita un consentimiento informado que deberá estar firmado o en su caso tener plasmada 
+										la huella digital de la persona alertadora; para ello, se requiere que señale los datos personales siguientes:
+										<br>
+										- Nombre completo de la persona alertadora; en su caso, su cargo público.<br>
+										- Firma autógrafa; en su caso, huella dactilar.
+										</p>
+										<p>
+										Las finalidades de obtener dicho consentimiento informado, con los respectivos datos personales, son las siguientes:<br>
+										1. Contar con los elementos suficientes para realizar la evaluación de riesgo establecida en el Acuerdo por el
+										que se emite el Protocolo de Protección para Personas Alertadoras de la Corrupción.<br>
+										2. Poder determinar las medidas de protección para la salvaguarda de la integridad de la persona alertadora 
+										tras alertar actos graves de corrupción.
+										</p>
+										<p>
+										Luego entonces, serán utilizados para la ejecución de la evaluación de riesgo y la implementación de las medidas de protección, 
+										por lo que los “datos personales” serán tratados con reserva entre las áreas administrativas que intervienen en realizar 
+										la evaluación o revaluación de riesgo y las autoridades encargadas de implementar las medidas de protección, así como todas 
+										aquellas áreas que intervengan para la adecuada implementación de medidas de protección. (Órganos Internos de Control Específicos, 
+										Unidades de Responsabilidades, Titularidades de las Áreas de Especialidad en Quejas, Denuncias e Investigaciones en los diferentes 
+										ramos señalados en el artículo 4° del Acuerdo por el que se extinguen órganos internos de control específicos, se crean oficinas 
+										de representación, y se asigna la dependencia, entidad paraestatal y órgano administrativo desconcentrado que integran el ramo en 
+										que ejercerán sus funciones los órganos internos de control especializados y las unidades administrativas que los auxilian; así como
+										áreas administrativas de los entes públicos que aplicarán las medidas de protección correspondientes).
+										</p>
+										
+										<h5 class="grey"><b>Transferencias de Datos Personales.</b>
+										</h5>
+										<p>Los datos personales que se recaban no serán transferidos, salvo que se actualice alguna de las excepciones previstas en la 
+										Ley General de Responsabilidades Administrativas, en la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, 
+										o cuando, previamente se haya obtenido su consentimiento expreso por escrito o por un medio de autenticación similar.
+										</p>
+										<h5 class="grey"><b>Mecanismos, medios y procedimientos para ejercer derechos de Acceso, Rectificación,
+										Cancelación y Oposición (ARCO) al tratamiento de datos personales.</b>
+										</h5>
+										<p>Usted podrá ejercer sus derechos de Acceso, Rectificación, Cancelación u Oposición de sus datos personales, “derechos ARCO”, directamente 
+										ante la Dirección General de Transparencia y Gobierno Abierto de la Secretaría de la Función Pública, ubicada en Piso 7, Ala Sur, del 
+										edificio Insurgentes Sur 1735, Guadalupe Inn, Alcaldía Álvaro Obregón, C.P. 01020, en la CDMX, o bien marcar al 55 2000 3000, extensiones 1433
+										y 1174, correo institucional <a href="mailto:irving.manchinelly@funcionpublica.gob.mx">irving.manchinelly@funcionpublica.gob.mx
+										</a>, o bien, podrá recibir asesoría de la CDAC en las extensiones 1044 o 2060, también directamente a través del correo electrónico dgtga@funcionpublica.gob.mx, así mismo podrá presentar una solicitud de ejercicio de derechos ARCO a través de la Plataforma Nacional de Transparencia, disponible en la liga electrónica siguiente: 
+										<a href="https://www.plataformadetransparencia.org.mx/web/guest/inicio" 
+										target="_blank">https://www.plataformadetransparencia.org.mx/web/guest/inicio</a>
+										</p>										
+										<p>Si desea conocer el procedimiento para el ejercicio de estos derechos, puede consultar la liga electrónica siguiente: 
+										<a href="https://www.gob.mx/cms/uploads/attachment/file/428335/DDP_Gu_a_derechos_ARCO_13Dic18.pdf" 
+										target="_blank">https://www.gob.mx/cms/uploads/attachment/file/428335/DDP_Gu_a_derechos_ARCO_13Dic18.pdf</a>
+										</p>
+										<h5 class="grey"><b>Cambios al aviso de privacidad.</b></h5>
+										<p>Usted podrá consultar el aviso de privacidad integral, en la siguiente liga electrónica:
+											<a href="https://www.gob.mx/sfp/documentos/avisos-de-privacidad"
+												target="_blank">https://www.gob.mx/sfp/documentos/avisos-de-privacidad</a></p>
+										<h5 class="grey text-center">¿Acepta los términos y condiciones?</h5>
+										<div class="text-center"><a href="#" id="acepto" class="btn btn-success">Sí,
+												acepto</a><a href="#" id="no-acepto" class="btn ml-3 btn-secondary" data-dismiss="modal">No,
+												regresar a inicio</a>
+										</div>
+									</div>
+
+								</div>
+								<!--mensaje1 -->
+								<div class='row mensaje' id="mensaje1">
+									<div class="col-12 text-center">
+										<h4>Solicitud fuera de ámbito de actuación</h4>
+										<p>Te informamos que <b>no somos la autoridad competente para conocer los hechos
+												manifestados en su
+												alerta</b>, debido a que nuestro ámbito de actuación es con respecto de
+											personas servidoras públicas de la Administración Pública a nivel Federal y
+											no así del orden Estatal.</p>
+										<p>Lo anterior con fundamento en lo establecido en la disposición SEXTA y DÉCIMO
+											QUINTA, párrafo cuarto, fracción I de los Lineamientos para la Promoción y
+											Operación del Sistema de Ciudadanos Alertadores Internos y Externos de la
+											Corrupción.</p>
+										<p>En el link <a
+												href="https://www.gob.mx/cms/uploads/attachment/file/488602/Contralores_entidades_270819.pdf">https://www.gob.mx/cms/uploads/attachment/file/488602/Contralores_entidades_270819.pdf</a>,
+											podrá consultar el Directorio de las Contralorías en los Gobiernos de los
+											Estados de la República</p>
+									</div>
+								</div>
+								<!--mensaje2 -->
+								<div class='row mensaje' id="mensaje2">
+									<div class="col-12 text-center">
+										<h4>Solicitud fuera de ámbito de actuación</h4>
+										<p>Te informamos que <b>no somos la autoridad competente para conocer los hechos
+												manifestados en su
+												alerta</b>, debido a que nuestro ámbito de actuación es con respecto de
+											personas servidoras públicas de la Administración Pública a nivel Federal y
+											no así del orden Municipal.</p>
+										<p>Lo anterior con fundamento en lo establecido en la disposición SEXTA y DÉCIMO
+											QUINTA, párrafo cuarto, fracción I de los Lineamientos para la Promoción y
+											Operación del Sistema de Ciudadanos Alertadores Internos y Externos de la
+											Corrupción.</p>
+									</div>
+								</div>
+								<!--mensaje3 -->
+								<div class='row mensaje' id="mensaje3">
+									<div class="col-12 text-center">
+										<h4>Presentar su denuncia ante la Fiscalía General de la República</h4>
+										<p>Te informamos que, <b>si los hechos presumen la existencia de la probable
+												comisión de un delito, deberás presentar tu denuncia ante la Fiscalía
+												General de la República</b>. Ponemos a tu disposición el enlace:</p>
+										<p><a
+												href="https://www.gob.mx/fgr/acciones-y-programas/denuncias-fgr">https://www.gob.mx/fgr/acciones-y-programas/denuncias-fgr</a>
+										</p>
+										<p>Si los hechos presumen una posible falta administrativa del personal de la
+											Fiscalía General de la República, la instancia que pudiera conocer la
+											situación es el Órgano Interno de Control de la Dependencia, cuya dirección
+											es la siguiente:</p>
+										<p><a href="mailto:visitel@pgr.gob.mx">visitel@pgr.gob.mx</a></p>
+									</div>
+								</div>
+								<!--mensaje4 -->
+								<div class='row mensaje' id="mensaje4">
+									<div class="col-12 text-center">
+										<h4>Presentar su denuncia ante la Fiscalía General del Estado</h4>
+										<p>Si los hechos presumen la existencia de la probable comisión de un delito del
+											fuero común, deberás presentar su denuncia ante la Procuraduría o Fiscalía
+											General de Justicia de su entidad federativa.</p>
+										<p>Ponemos a su disposición el siguiente directorio:</p>
+										<p><a
+												href="http://www.cnpj.gob.mx/sitios-de-interes/Paginas/procuradurias-generales.aspx">http://www.cnpj.gob.mx/sitios-de-interes/Paginas/procuradurias-generales.aspx</a>
+										</p>
+										<p>Si los hechos presumen una posible falta administrativa del personal de la
+											Procuraduría o Fiscalía General de Justicia de su entidad federativa, la
+											instancia que pudiera conocer la situación es el Órgano Interno de Control o
+											Visitaduría correspondiente.</p>
+									</div>
+								</div>
+
+								<!-- mensajef1-->
+								<div class='row mensaje' id="mensajef1">
+									<div class="col-12 text-center">
+										<h4>Solicitud fuera de ámbito de actuación</h4>
+										<p>Te informamos que <b>no somos la autoridad competente para conocer los hechos
+												manifestados en su
+												alerta</b>, debido a que nuestro ámbito de actuación es únicamente
+											respecto de posibles conductas de cohecho, peculado y desvío de recursos que
+											la Ley General de Responsabilidades Administrativas señala como conductas
+											graves en las que pueden incurrir las personas servidoras públicas de la
+											Administración Pública Federal.</p>
+										<p>Lo anterior con fundamento en lo establecido en la disposición SEXTA y DÉCIMO
+											QUINTA, párrafo cuarto, fracción I de los Lineamientos para la Promoción y
+											Operación del Sistema de Ciudadanos Alertadores Internos y Externos de la
+											Corrupción.</p>
+										<p>De encontrarse relacionados los hechos con personas servidoras públicas
+											federales en el ejercicio de sus funciones, te invitamos a que nos lo
+											comuniques en la siguiente dirección:</p>
+										<p><a href="https://sidec.funcionpublica.gob.mx/#!/">https://sidec.funcionpublica.gob.mx/#!/</a>
+										</p>
+									</div>
+								</div>
+								<!--mensaje2 -->
+								<div class='row mensaje' id="mensaje2">
+									<div class="col-12 text-center">
+										<h4>Solicitud fuera de ámbito de actuación</h4>
+										<p>Te informamos que <b>no somos la autoridad competente para conocer los hechos
+												manifestados en su
+												alerta</b>, debido a que nuestro ámbito de actuación es con respecto de
+											personas servidoras públicas de la Administración Pública a nivel Federal y
+											no así del orden Estatal.</p>
+										<p>Lo anterior con fundamento en lo establecido en la disposición SEXTA y DÉCIMO
+											QUINTA, párrafo cuarto, fracción I de los Lineamientos para la Promoción y
+											Operación del Sistema de Ciudadanos Alertadores Internos y Externos de la
+											Corrupción.</p>
+										<p>En el link <a
+												href="https://www.gob.mx/cms/uploads/attachment/file/488602/Contralores_entidades_270819.pdf">https://www.gob.mx/cms/uploads/attachment/file/488602/Contralores_entidades_270819.pdf</a>,
+											podrá consultar el Directorio de las Contralorías en los Gobiernos de los
+											Estados de la República</p>
+									</div>
+								</div>
+								<!-- mensaje3-->
+								<div class='row mensaje' id="mensaje3">
+									<div class="col-12 text-center">
+										<h4>Presentar su denuncia ante la Fiscalía General de la República</h4>
+										<p>Se le informa que <b>si los hechos presumen la existencia de la probable
+												comisión de un delito, deberá presentar su denuncia ante la Fiscalía
+												General de la República</b>.
+											Si los hechos presumen una posible falta administrativa del personal de la
+											Fiscalía General de la República, la instancia que pudiera conocer la
+											situación es el Órgano Interno de Control de la dependencia.</p>
+									</div>
+								</div>
+								<!-- mensaje4-->
+								<div class='row mensaje' id="mensaje4">
+									<div class="col-12 text-center">
+										<h4>Presentar su denuncia ante la Fiscalía General del Estado
+										</h4>
+										<p>Se le informa que si los hechos presumen la existencia de la probable
+											comisión de un delito del fuero común, deberá presentar su denuncia ante la
+											Procuradoría o Fiscalía General de Justicia de su entidad federativa.
+											Si los hechos presumen una posible falta administrativa del personal de la
+											Procuraduría Fiscalía General de Justicia de su entidad federativa, la
+											instancia que pudiera conocer la situación es el Órgano Interno de Control o
+											Visitaduría correspondiente.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function () {
+			$('#aviso-privacidad').on('show.bs.modal', function (e) {
+				$('input:radio').prop('checked', false);
+				$(".mensaje,.step").hide();
+				$("#step1").show();
+			});
+			$(document).scroll(function () {
+				var $nav = $("#header");
+				if ($(this).scrollTop() > $nav.height())
+					$nav.removeClass('transparent');
+
+				else
+					$nav.addClass('transparent');
+			});
+
+			var viewportWidth = $(window).width();
+			if (viewportWidth > 1024)
+				scrollspyile($("#nav"));
+			else
+				scrollspyile($("#navPanel > nav"));
+			$("input[name='servpub']").change(function (ev) {
+				var sel = $(this).val();
+				switch (sel) {
+					case '1':
+						$("#step1").hide();
+						$("#stepf1").show();
+						break;
+					case '2':
+						$("#step1").hide();
+						$('#mensaje1').show();
+						break;
+					case '3':
+					case '6':
+						$("#step1").hide();
+						$('#mensaje2').show();
+						break;
+					case '4':
+						$("#step1").hide();
+						$('#mensaje3').show();
+						break;
+					case '5':
+						$("#step1").hide();
+						$('#mensaje4').show();
+						break;
+				}
+
+			});
+			$("input[name='f1']").change(function (ev) {
+				var sel = $(this).val();
+				switch (sel) {
+					case '1':
+						$("#stepf1").hide();
+						$("#step3").show();
+						break;
+					case '2':
+						$("#stepf1").hide();
+						$("#stepf2").show();
+						break;
+				}
+			});
+			$("input[name='f2']").change(function (ev) {
+				var sel = $(this).val();
+				switch (sel) {
+					case '1':
+						$("#stepf2").hide();
+						$("#step3").show();
+						break;
+					case '2':
+						$("#stepf2").hide();
+						$("#stepf3").show();
+						break;
+				}
+			});
+			$("input[name='f3']").change(function (ev) {
+				var sel = $(this).val();
+				console.log(sel);
+				switch (sel) {
+					case '1':
+						$("#stepf3").hide();
+						$("#step3").show();
+						break;
+					case '2':
+						$("#stepf3").hide();
+						$("#stepf4").show();
+						break;
+				}
+			});
+			$("input[name='f4']").change(function (ev) {
+				var sel = $(this).val();
+				switch (sel) {
+					case '1':
+						$("#stepf4").hide();
+						$("#step3").show();
+						break;
+					case '2':
+						$("#stepf4").hide();
+						$("#stepf5").show();
+						break;
+				}
+			});
+			$("input[name='f5']").change(function (ev) {
+				var sel = $(this).val();
+				switch (sel) {
+					case '1':
+						$("#stepf5").hide();
+						$("#step3").show();
+						break;
+					case '2':
+						$("#stepf5").hide();
+						$("#stepf6").show();
+						break;
+				}
+			});
+			$("input[name='f6']").change(function (ev) {
+				var sel = $(this).val();
+				switch (sel) {
+					case '1':
+						$("#stepf6").hide();
+						$("#step3").show();
+						break;
+					case '2':
+						$("#stepf6").hide();
+						$('#mensajef1').show();
+						break;
+				}
+			});
+
+			$(".btn").click(function (ev) {
+				ev.preventDefault();
+				switch ($(this).attr('id')) {
+					case 'acepto':
+						location.href = "https://alertadorescontralacorrupcion.buengobierno.gob.mx/"
+						break;
+					case 'no-acepto':
+						$("#aviso-privacidad").modal('hide');
+						break;
+					default:
+						$("#aviso-privacidad").modal('hide');
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRXBW0BXRN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HRXBW0BXRN');
+    </script>
+    
+    <meta property="og:site_name" content="IPN" />
+    <meta property="og:url" content="https://www.ipn.mx/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dirección de Administración Escolar del Instituto">
+    <meta property="og:description" content="Página oficial de la Dirección de Administración Escolar del IPN, donde encontrarás información y servicios relacionados con la gestión académica.
+">
+    <meta property="og:image" itemprop="image"  content="https://www.ipn.mx/assets/files/main/img/template/header/logo-ipn-horizontal.png">
+    <meta property="og:image:type" content="image/jpg" />
+    
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Dirección de Administración Escolar del Instituto - IPN</title>
+    <base href="https://ipn.mx/dae/" />
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Página oficial de la Dirección de Administración Escolar del IPN, donde encontrarás información y servicios relacionados con la gestión académica.
+">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--  
+    <link rel="shortcut icon" href="/assets/files/main/img/template/favicon.ico">
+    -->
+    <link rel="shortcut icon" href="https://www.ipn.mx/assets/files/main/img/template/favicon.ico">
+
+    
+    <!-- Estilos bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"  rel="stylesheet">
+    
+    <!-- Estilos template -->
+    <link rel="stylesheet" type="text/css" href="https://test.desarrolloweb.ipn.mx/assets/files/main/css/style-template.css">
+        
+    <!-- Referencia Owl carrusel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+    <!-- Galería -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+    <!-- Estilos componentes -->
+    <link rel="stylesheet" type="text/css" href="https://test.desarrolloweb.ipn.mx/assets/files/main/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container encabezado-ipn">
+
+        <div class="utilerias-header text-right">
+            <ul class="list-inline text-end utilerias-list">
+                <li class="list-inline-item">
+                    <a href="https://www.ipn.mx/directorio-telefonico.html">DIRECTORIO</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.ipn.mx/correo-electronico.html">CORREO</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.ipn.mx/calendario-academico.html">CALENDARIO</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.ipn.mx/transparencia/">TRANSPARENCIA</a> |
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.ipn.mx/proteccion-datos-personales/">PROTECCIÓN DE DATOS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="https://www.gob.mx/sep" class="d-inline enlace-educacion">
+                            <img src="/assets/files/main/img/template/header/pleca-educacion.svg" class="logo-educacion">
+                        </a>
+                        <!-- <a href="https://ipn.mx/" class="d-inline-block"> -->
+                        <a href="https://ipn.mx/">
+                            <img src="/assets/files/main/img/template/header/logo-ipn-horizontal.svg" class="logo-ipn" alt="Logo IPN">
+                            <!-- Logo anterior
+                            <img src="/assets/files/main/img/template/header/logo-ipn-guinda.svg" class="logo-ipn" alt="Logo IPN">
+                            <p class="d-inline-block logo-ipn-enlace">
+                                Instituto Politécnico Nacional <br>
+                                <span class="sm">"La Técnica al Servicio de la Patria"</span>
+                            </p>
+                            -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accesibilidad-header text-right">
+            <ul class="list-inline text-end">
+                <li class="list-inline-item">
+                    <a href="https://www.test.desarrolloweb.ipn.mx/english/home.html" hreflang="“en-us”" class="mr-3">
+                        <img src="/assets/files/main/img/template/header/icono-idioma-esp.png" width="45" alt="Idioma Espanol">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <i class="fab fa-accessible-icon"></i>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad contraste" onclick="toogleContraste();">
+                        <i class="fas fa-adjust"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad aumentaLetra" href="#">A+</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad reduceLetra" href="#">A-</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn--accesibilidad resetLetra">A </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="menu-principal sticky-top" id="menu-principal">
+  <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuPrincipal" aria-controls="navbarMenuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenuPrincipal">
+              
+                
+                <ul class="navbar-nav w-100 justify-content-center me-auto mb-2 mb-lg-0">
+                    <li>
+                      <div class="position-relative">
+                        <div class="position-absolute banderin d-none">
+                            <img src="/https://www.ipn.mx/assets/files/main/img/template/logo_ipn_guinda.svg" alt="Dirección de Administración Escolar" class="banderin-img">
+                        </div>
+                      </div>                        
+                    </li>
+                    <li class="px-xl-3 px-xxl-5 d-none"></li>
+                    <li class="px-xl-3 px-xxl-5 d-none"></li>
+                    <li>
+                        <!-- outerTpl -->
+<ul class="navbar-nav w-100 d-flex justify-content-center me-auto mb-2 mb-lg-0">
+    <!-- rowTpl -->
+<li class="nav-item first active ">
+    <a class="nav-link" href="https://ipn.mx/dae/" title="Dirección de Administración Escolar del Instituto" >inicio</a>
+    
+</li>
+<!-- rowTpl -->
+<li class="nav-item dropdown  ">
+    <a class="nav-link dropdown-toggle" href="#" title="Conócenos"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Conócenos</a>
+    <!-- innerTpl -->
+<ul class="dropdown-menu">
+    <!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item first" href="conocenos/mision-vision.html" title="Misión y Visión DAE IPN: Nuestros Objetivos" >Misión y visión</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="conocenos/directorio.html" title="Directorio de la DAE IPN: Contactos y Ubicación" >Directorio</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="conocenos/estructura-orgánica.pdf" title="Estructura Orgánica de la DAE IPN: Organización" target="_blank">Estructura Orgánica</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item last" href="conocenos/sgc.html" title="Sistema de Gestión de Calidad (SGC) de la DAE IPN" >Sistema de Gestión de Calidad</a>
+    
+</li>
+
+</ul>
+</li>
+<!-- rowTpl -->
+<li class="nav-item dropdown  ">
+    <a class="nav-link dropdown-toggle" href="#" title="Trámites"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Trámites</a>
+    <!-- innerTpl -->
+<ul class="dropdown-menu">
+    <!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item first" href="trámites/titulo-profesional.html" title="Título Profesional DAE IPN: Formación Académica" >Título profesional</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="trámites/certificado-carta-pasante.html" title="Certificado y Carta Pasante DAE IPN: Requisitos" >Certificado y Carta Pasante</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="trámites/tramites-varios.html" title="Trámites Varios DAE IPN: Información y Requisitos" >Trámites Varios</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="trámites/equivalencias-y-revalidaciones.html" title="Equivalencias y Revalidaciones en la DAE del IPN" >Equivalencias y Revalidaciones</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item " href="trámites/credencial-institucional.html" title="Credencial Institucional de la DAE IPN: Requisitos" >Credencial Institucional</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item last" href="trámites/rectificacion-validacion.html" title="Rectificación de Datos Personales en la DAE IPN" >Rectificación de Datos Personales y Validación de documentos</a>
+    
+</li>
+
+</ul>
+</li>
+<!-- rowTpl -->
+<li class="nav-item dropdown  ">
+    <a class="nav-link dropdown-toggle" href="#" title="RVOE"  role="button" data-bs-toggle="dropdown" aria-expanded="false">RVOE</a>
+    <!-- innerTpl -->
+<ul class="dropdown-menu">
+    <!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item first" href="rvoe/nivel-medio-superior/" title="Nivel Medio Superior" >Nivel Medio Superior</a>
+    
+</li>
+<!-- innerRowTpl -->
+<li>
+    <a class="dropdown-item last" href="rvoe/nivel-superior/" title="Nivel Superior" >Nivel Superior</a>
+    
+</li>
+
+</ul>
+</li>
+<!-- rowTpl -->
+<li class="nav-item last ">
+    <a class="nav-link" href="precios.html" title="Precios de Servicios en la DAE IPN: Información" >Precios</a>
+    
+</li>
+
+</ul>
+                    </li>
+                </ul>
+            
+              <ul class="utilerias-box navbar-nav" role="search">
+                  <li class="utilerias-separador"></li>
+                  <!--
+                  <li class="nav-item ">
+                      <a class="nav-link offcanvas-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuPrincipal" aria-controls="offcanvasMenuPrincipal">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                              <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z"/>
+                          </svg>
+                      </a>
+                  </li>
+                  -->
+                  <li class="nav-item">
+                      <button type="button" class="nav-link utilerias-busqueda" data-bs-toggle="modal" data-bs-target="#modalBusqueda">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                           </svg>
+                      </button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</div>
+
+<div id="tituloUnidad" class="titulo_unidad">
+    <div class="container p-0">
+        <h1 class="titulo_unidad_text text-center">Dirección de Administración Escolar</h1>
+    </div>
+</div>
+
+
+    <div id="" class="carousel slide carrusel_principal" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+    <a href="https://www.admision.ipn.mx/portal/index.html" target="_blank">
+        <img src="/assets/files/dae/assets/uploads/conv_admision_25_1.jpg" class="d-block w-100" alt="conv_admision_25_1.jpg">
+    </a>
+</div><div class="carousel-item ">
+    <a href="https://servicios.dae.ipn.mx/cambiosUA/index.html" target="_blank">
+        <img src="/assets/files/dae/assets/uploads/convocatoria_cambio_carrera_3.jpg" class="d-block w-100" alt="convocatoria_cambio_carrera_3.jpg">
+    </a>
+</div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<div class="bkg_Default p-3 ">
+    <div class="container    "><div class="container-fluid px-0 px-sm-5 bkg_Default ">
+        <div class="row py-3 ">
+        <div class="col-12 col-sm-6 col-md-2 ">
+             <a href="https://www.ipn.mx/assets/files/main/docs/inicio/calendarioIPN-Escolarizada.pdf" class="icono" target="_blank">
+    <div class="text-center">
+        <img src="/assets/files/dae/assets/uploads/calendario_6.png" class="img-fluid" alt="Modalidad escolarizada">
+        <img src="/assets/files/dae/img/home/calendario-b.png" alt="Modalidad escolarizada" class="img-fluid icono-hover u-oculto">
+        <p class="">Calendario escolarizada</p>
+    </div>
+ </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 mt-4 mt-sm-0 ">
+             <a href="https://www.ipn.mx/assets/files/main/docs/inicio/calendarioIPN-NoEscolarizado.pdf" class="icono" target="_blank">
+    <div class="text-center">
+        <img src="/assets/files/dae/assets/uploads/calendario_7.png" class="img-fluid" alt="Modalidad no escolarizada">
+        <img src="/assets/files/dae/img/home/calendario-b.png" alt="Modalidad no escolarizada" class="img-fluid icono-hover u-oculto">
+        <p class="">Calendario no escolarizada</p>
+    </div>
+ </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 mt-4 mt-sm-0 ">
+             <a href="https://www.sicert.ipn.mx/" class="icono" target="_blank">
+    <div class="text-center">
+        <img src="/assets/files/dae/assets/uploads/sicert_1.png" class="img-fluid" alt="Sistema SICERT">
+        <img src="/assets/files/dae/img/home/sicert-b.png" alt="Sistema SICERT" class="img-fluid icono-hover u-oculto">
+        <p class="">SICERT</p>
+    </div>
+ </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 mt-4 mt-sm-0 ">
+             <a href="https://www.ipn.mx/saes/" class="icono" target="_blank">
+    <div class="text-center">
+        <img src="/assets/files/dae/assets/uploads/saes_1.png" class="img-fluid" alt="Sistema SAES IPN">
+        <img src="/assets/files/dae/img/home/saes-b.png" alt="Sistema SAES IPN" class="img-fluid icono-hover u-oculto">
+        <p class="">SAES</p>
+    </div>
+ </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 mt-4 mt-sm-0 ">
+             <a href="http://www.admision.ipn.mx/" class="icono" target="_blank">
+    <div class="text-center">
+        <img src="/assets/files/dae/assets/uploads/admision_1.png" class="img-fluid" alt="Admisión Instituto Politécnico Nacional">
+        <img src="/assets/files/dae/img/home/admision-b.png" alt="Admisión Instituto Politécnico Nacional" class="img-fluid icono-hover u-oculto">
+        <p class="">Admisión</p>
+    </div>
+ </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 mt-4 mt-sm-0 ">
+             <a href="https://servicios.dae.ipn.mx/planteles" class="icono" target="_blank">
+    <div class="text-center">
+        <img src="/assets/files/dae/assets/uploads/enlaces_1.png" class="img-fluid" alt="Enlaces a unidades académicas del IPN">
+        <img src="/assets/files/dae/img/home/enlaces-b.png" alt="Enlaces a unidades académicas del IPN" class="img-fluid icono-hover u-oculto">
+        <p class="">Enlaces a unidades académicas</p>
+    </div>
+ </a>
+        </div>
+    </div>
+</div></div>
+</div>
+
+<div class="bkImagen" style="background-image: url(/assets/files/dae/img/home/dae-backgrou.jpeg);background-size: cover;">
+  <div class="bkMascaraAzul">
+    <div class="container    "> <div class="row py-3  ">
+        <div class="col-12 col-sm-6  ">
+           <h2 class="text-start fw-bold display-4">Sistema de gestión de calidad</h2>
+        </div>
+        <div class="col-12 col-sm-6 mt-4 mt-sm-0  ">
+           <div class="p-3">
+</div>
+
+<ul class="fa-ul listConfig ">
+    <li>
+    <span class="fa-li"><i class="fa-solid fa-circle fa-2xs"></i></span>
+    <a href="" target="_blank">Servicios de registro y supervisión escolar</a>
+</li>
+
+<li>
+    <span class="fa-li"><i class="fa-solid fa-circle fa-2xs"></i></span>
+    <a href="" target="_blank">Encuesta de Satisfacción: Atención a Planteles RVOE</a>
+</li>
+
+<li>
+    <span class="fa-li"><i class="fa-solid fa-circle fa-2xs"></i></span>
+    <a href="" target="_blank">Encuesta de satisfacción: Admisión, equivalencias y otros</a>
+</li>
+
+<li>
+    <span class="fa-li"><i class="fa-solid fa-circle fa-2xs"></i></span>
+    <a href="" target="_blank">Micrositio</a>
+</li>
+</ul>
+        </div>
+    </div></div>
+  </div>
+</div>
+
+<div class="bkg_Default p-3 ">
+    <div class="container    "><h2 class="text-center fw-bold display-6">Síguenos en:</h2>
+
+<div class="d-flex flex-wrap justify-content-center">
+    <div class="p-2 ">
+        <a href="https://www.facebook.com/oficialdaeipn/" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/fb.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 ">
+        <a href="https://twitter.com/dae_ipn" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/x.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 ">
+        <a href="https://www.instagram.com/dae_ipn/" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/ig.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 d-none">
+        <a href="" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/yt.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 d-none">
+        <a href="" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/tt.svg" />
+            </svg> 
+        </a>
+    </div>
+    <div class="p-2 ">
+        <a href="" target="_blank">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+                <image width="64" height="64" href="https://www.test.desarrolloweb.ipn.mx/assets/files/main/img/redes-sociales/g.svg" />
+            </svg>
+        </a>
+    </div>
+</div>    
+
+</div>
+</div>
+
+<div class="bkg_Guinda2 p-3 ">
+    <div class="container-fluid px-0 px-sm-5 bkg_Default ">
+    <div class="container    "><h2 class="text-center fw-bold display-4">Ubicación</h2></div>
+</div>
+
+<div class="container-fluid px-0 px-sm-5 bkg_Default ">
+    <div class="container    "><div class="iframe_alto400">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.0372381024413!2d-99.13555468763899!3d19.497033638541062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9ba3ef09985%3A0x6e5b1d699b26cf07!2sDAE%20-%20Direcci%C3%B3n%20de%20Administraci%C3%B3n%20Escolar%20-%20IPN!5e0!3m2!1ses!2smx!4v1724970521528!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+
+    <div class="footer-ipn">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-4 text-center">
+                    <img src="/assets/files/main/img/template/footer/pleca-educacion-footer.png" class="img-fluid logo-educacion-footer">
+                </div>
+                <div class="col-lg-8">
+                    <p>INSTITUTO POLITÉCNICO NACIONAL</p>
+                    <p>D.R. Instituto Politécnico Nacional (IPN). Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos, Zacatenco, Alcaldía Gustavo A. Madero, C.P. 07738, Ciudad de México. Conmutador: 55 57 29 60 00 / 55 57 29 63 00.</p>
+                    <p class="mb-0">Esta página es una obra intelectual protegida por la Ley Federal del Derecho de Autor, puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica; su uso para otros fines, requiere autorización previa y por escrito de la Dirección General del Instituto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de busqueda -->
+    <div class="modal fade" id="modalBusqueda" tabindex="-1" aria-labelledby="modalBusqueda" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="textoBusqueda" class="form-control" placeholder="¿Qué buscas?" aria-label="Busqueda" aria-describedby="boton-busqueda" onkeypress="if(event.keyCode == 13){enviarBusqueda();}" />
+                        <button class="btn btn-primary btn-busqueda" type="button" id="boton-busqueda" onclick="enviarBusqueda();">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+     <!-- Owl carrusel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+     <!-- Galería -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+    <!-- JS de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.js"></script>
+    
+    <!-- Framework gobernación -->
+    <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+    
+    <!-- Scripts template -->
+    <script src="https://www.test.desarrolloweb.ipn.mx/assets/files/main/js/index.js"></script>
+    
+    
+
+    </div>
+    <!-- Script para enviar al buscador gratuito -->
+    <script>
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const hashes = urlParams.getAll('tab');
+    
+            hashes.forEach(hash => {
+                const tabTrigger = document.querySelector(`button[data-bs-target="#${hash}"]`);
+    
+                if (tabTrigger) {
+                    const tab = new bootstrap.Tab(tabTrigger);
+                    tab.show();
+                } else {
+                    console.error(`No se encontró el elemento con el hash: #${hash}`);
+                }
+            });
+        });
+    
+        let isStyleChanged = false;
+        
+        function enviarBusqueda(){
+            var texto = document.getElementById("textoBusqueda").value;
+            // window.open("https://buscador.ipn.anteater.ai/search?q="+texto,'_blank');
+            var dominio = "ipn.mx"; // Reemplaza con el dominio que desees
+            var consulta = "site:" + dominio + " " + texto;
+            window.open("https://www.google.com/search?q=" + encodeURIComponent(consulta), '_blank');
+        }
+        
+        function toogleContraste(){
+            
+            isStyleChanged = !isStyleChanged;
+
+            if (isStyleChanged) {
+                const divs = document.querySelectorAll('div');
+                divs.forEach(div => {
+                    const elements = div.querySelectorAll('*');
+                    div.classList.add('text-danger', 'bg-dark');
+                    elements.forEach(el => {
+                        el.classList.add('text-danger');
+                    });
+                });
+            } else {
+                // Restaurar estilos originales
+                const divs = document.querySelectorAll('div');
+                divs.forEach(div => {
+                    const elements = div.querySelectorAll('*');
+                    div.classList.remove('text-danger', 'bg-dark');
+                    elements.forEach(el => {
+                        el.classList.remove('text-danger');
+                    });
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
